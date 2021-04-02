@@ -21,8 +21,8 @@ get_header();
 
 				the_post_navigation(
 					array(
-						'prev_text' => '<div class="bg-white p-4 shadow-sm sm:mr-2"><span class="nav-subtitle text-blue-500 block">' . esc_html__( 'Previous:', 'tailwindcss' ) . '</span> <span class="nav-title">%title</span></div>',
-						'next_text' => '<div class="bg-white p-4 shadow-sm sm:ml-2"><span class="nav-subtitle text-blue-500 block">' . esc_html__( 'Next:', 'tailwindcss' ) . '</span> <span class="nav-title">%title</span></div>',
+						'prev_text' => '<div class="bg-white p-4 shadow-sm sm:mr-2"><span class="nav-subtitle text-blue-500 block">' . esc_html__( 'Previous:', 'tailwindcss' ) . '</span> <span class="nav-title font-medium">%title</span></div>',
+						'next_text' => '<div class="bg-white p-4 shadow-sm sm:ml-2"><span class="nav-subtitle text-blue-500 block">' . esc_html__( 'Next:', 'tailwindcss' ) . '</span> <span class="nav-title font-medium">%title</span></div>',
 					)
 				);
 

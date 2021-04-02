@@ -127,9 +127,9 @@ function tailwindcss_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', 'tailwindcss' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'tailwindcss' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="widget %2$s bg-white p-4 shadow-sm">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
+			'before_title'  => '<h2 class="widget-title text-2xl mb-2">',
 			'after_title'   => '</h2>',
 		)
 	);
