@@ -25,35 +25,33 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'tailwindcss' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$tailwindcss_description = get_bloginfo( 'description', 'display' );
-			if ( $tailwindcss_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $tailwindcss_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<header id="masthead" class="site-header bg-blue-600 mb-8">
+		<div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
+			<div class="site-branding">
+				<?php the_custom_logo(); ?>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tailwindcss' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+				<a
+					title="<?php echo get_bloginfo( 'description', 'display' ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>"
+					class="site-title inline-block text-white text-2xl py-2 hover:text-gray-100"
+					href="<?php echo esc_url( home_url( '/' ) ); ?>"
+					rel="home"
+				>
+					<?php bloginfo( 'name' ); ?>
+				</a>
+			</div><!-- .site-branding -->
+
+			<nav id="site-navigation" class="main-navigation w-auto">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tailwindcss' ); ?></button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'link_before'	 => '<span class="inline-block text-gray-300 hover:text-white rounded-md text-md font-medium px-3 py-2">',
+						'link_after'	 => '</span>'
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->
