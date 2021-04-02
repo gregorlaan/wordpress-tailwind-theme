@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area bg-white p-4 shadow-sm">
+<div id="comments" class="comments-area bg-white mb-8 p-4 shadow-sm">
 
 	<?php
 	// You can start editing here -- including this comment!

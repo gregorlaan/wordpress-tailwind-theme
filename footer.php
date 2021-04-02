@@ -11,8 +11,8 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer bg-gray-800 text-gray-300 mt-8">
+		<div class="site-info max-w-7xl mx-auto text-center py-8">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tailwindcss' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
