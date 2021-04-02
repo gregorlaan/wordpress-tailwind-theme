@@ -22,17 +22,17 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page" class="site bg-gray-100">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'tailwindcss' ); ?></a>
 
-	<header id="masthead" class="site-header bg-blue-600 mb-8">
+	<header id="masthead" class="site-header bg-white shadow-sm mb-8">
 		<div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
 			<div class="site-branding">
 				<?php the_custom_logo(); ?>
 
 				<a
 					title="<?php echo get_bloginfo( 'description', 'display' ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>"
-					class="site-title inline-block text-white text-2xl py-2 hover:text-gray-100"
+					class="site-title inline-block text-gray-500 text-2xl py-2 hover:text-blue-500"
 					href="<?php echo esc_url( home_url( '/' ) ); ?>"
 					rel="home"
 				>
@@ -47,7 +47,7 @@
 					array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
-						'link_before'	 => '<span class="inline-block text-gray-300 hover:text-white rounded-md text-md font-medium px-3 py-2">',
+						'link_before'	 => '<span class="inline-block text-gray-700 hover:text-blue-500 rounded-md text-md font-medium px-3 py-2">',
 						'link_after'	 => '</span>'
 					)
 				);

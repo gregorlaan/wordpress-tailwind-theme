@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<div class="flex max-w-7xl mx-auto flex-col md:flex-row">
-		<main id="primary" class="site-main w-full md:flex-grow px-4">
+		<main id="primary" class="site-main w-full md:flex-grow bg-white p-4 shadow-sm">
 
 			<?php
 			while ( have_posts() ) :

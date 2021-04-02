@@ -16,8 +16,7 @@ get_header();
 ?>
 
 	<div class="flex max-w-7xl mx-auto flex-col md:flex-row">
-		<main id="primary" class="site-main w-full md:flex-grow px-4">
-			<?php /* is_active_sidebar('sidebar-1') */ ?>
+		<main id="primary" class="site-main w-full md:flex-grow">
 			<?php
 			if ( have_posts() ) :
 
