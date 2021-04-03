@@ -142,6 +142,7 @@ add_action( 'widgets_init', 'tailwindcss_widgets_init' );
 function tailwindcss_scripts() {
 	wp_enqueue_style( 'tailwindcss-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'tailwindcss-framework-style', get_template_directory_uri().'/tailwind.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'tailwindcss-typography-style', get_template_directory_uri().'/typography.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'tailwindcss-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'tailwindcss-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
