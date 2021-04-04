@@ -130,7 +130,7 @@ function tailwindcss_widgets_init() {
 			'before_widget' => '<section id="%1$s" class="widget %2$s bg-white p-4 shadow-sm">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title text-2xl mb-2">',
-			'after_title'   => '</h2>',
+			'after_title'   => '<span class="my-2 w-10 border-b-2 border-blue-500 block"></span></h2>',
 		)
 	);
 }
